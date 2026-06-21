@@ -277,10 +277,11 @@ Instituto Federal de Mato Grosso do Sul (IFMS)
 
 # Contatos
 
-<p style="display: flex; flex-direction: column;">
-  <a>henry.campos@estudante.ifms.edu.br</a>
-  <a>henrythcampos@gmail.com</a>
-</p>
+henry.campos@estudante.ifms.edu.br
+
+<br>
+
+henrythcampos@gmail.com
 
 # Licença
 
