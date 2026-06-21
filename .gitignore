@@ -1,0 +1,12 @@
+node_modules
+.git
+.yarn/cache
+.pnp.loader.mjs
+.pnp.cjs
+yarn.lock
+dist
+
+apps/api/node_modules
+apps/web/node_modules
+
+.env
