@@ -1,14 +1,16 @@
-Projeto EMA — Estações Meteorológicas Automáticas
+# Projeto EMA — Estações Meteorológicas Automáticas
 
-<p align="center">
+<p align="center" style="display: flex;">
   <img src="./images/logo.png" alt="Logo EMA" width="180">
-</p><p align="center">
   <strong>Sistema completo para coleta, armazenamento, processamento e visualização de dados meteorológicos em tempo real.</strong>
-</p><p align="center">
+</p>
+<p align="center">
   <img src="./images/cover.png" alt="Capa do Projeto EMA">
-</p>---
+</p>
 
-Sobre o Projeto
+---
+
+## Sobre o Projeto
 
 O Projeto EMA (Estações Meteorológicas Automáticas) é uma iniciativa acadêmica desenvolvida no Instituto Federal de Mato Grosso do Sul (IFMS) com o objetivo de construir uma plataforma integrada para monitoramento meteorológico.
 
@@ -16,107 +18,110 @@ A solução permite coletar dados ambientais em tempo real, armazená-los de for
 
 ---
 
-Objetivos
+# Objetivos
 
-- Coletar dados meteorológicos em tempo real
-- Armazenar informações de forma estruturada
-- Disponibilizar dados através de APIs REST
-- Permitir visualização e análise dos dados
-- Realizar processamento estatístico
-- Aplicar técnicas de triangulação e interpolação espacial
-- Servir como plataforma de pesquisa, ensino e extensão
+* Coletar dados meteorológicos em tempo real
+* Armazenar informações de forma estruturada
+* Disponibilizar dados através de APIs
+* Permitir visualização e análise dos dados
+* Realizar processamento estatístico dos dados coletados
+* Aplicar técnicas de triangulação e interpolação espacial
+* Servir como plataforma de pesquisa e aprendizado
 
 ---
 
-Arquitetura do Sistema
+# Arquitetura do Sistema
 
-O sistema é dividido em três grandes camadas:
+O sistema é dividido em três componentes principais.
 
-Estações Meteorológicas
+## 1. Estações Meteorológicas
 
 Responsáveis pela aquisição dos dados ambientais.
 
-Sensores utilizados
+Exemplos de sensores:
 
-- Temperatura
-- Umidade relativa do ar
-- Pressão atmosférica
-- Luminosidade
-- Velocidade do vento
-- Pluviosidade
+* Temperatura
+* Umidade relativa do ar
+* Pressão atmosférica
+* Luminosidade
+* Velocidade do vento
+* Pluviosidade
 
 ---
 
-Backend
+## 2. Backend
 
 Responsável por:
 
-- Receber dados das estações
-- Validar informações recebidas
-- Armazenar dados históricos
-- Disponibilizar API REST
-- Gerenciar autenticação e autorização
-- Integrar os serviços de processamento
+* Receber dados das estações
+* Validar informações recebidas
+* Armazenar dados históricos
+* Disponibilizar API REST
+* Gerenciar autenticação e acesso
+* Integrar os serviços de processamento
 
-Tecnologias
+### Tecnologias
 
-- Node.js
-- Express
-- Sequelize
-- PostgreSQL
-- PostGIS
-- Redis
-- Docker
+* Node.js
+* Express
+* Sequelize
+* PostgreSQL
+* PostGIS
+* Redis
+* Docker
 
 ---
 
-Processamento Científico
+## 3. Processamento Científico
 
 Responsável por:
 
-- Tratamento de dados meteorológicos
-- Cálculos estatísticos
-- Triangulação espacial entre estações
-- Interpolação geográfica
-- Geração de informações derivadas
+* Tratamento de dados meteorológicos
+* Cálculos estatísticos
+* Triangulação espacial entre estações
+* Interpolação de valores geográficos
+* Geração de informações derivadas
 
-Tecnologias
+### Tecnologias
 
-- C++
-- Algoritmos Numéricos
-- Geometria Computacional
-- Processamento Científico
+* C++
+* Algoritmos numéricos
+* Geometria computacional
+* Processamento de dados
 
 ---
 
-Frontend
+## 4. Frontend
 
 Responsável por:
 
-- Visualização dos dados em tempo real
-- Dashboards meteorológicos
-- Exibição de históricos
-- Consumo da API
-- Visualização geográfica das estações
-- Consulta de métricas ambientais
+* Visualização dos dados em tempo real
+* Dashboards meteorológicos
+* Exibição de históricos
+* Consumo da API
+* Visualização geográfica das estações
+* Consulta de métricas ambientais
 
-Tecnologias
+### Tecnologias
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
 
 ---
 
-Diagrama do Banco de Dados
+## Diagrama do Banco de Dados
 
 <p align="center">
   <img src="./images/diagrama_der.png" alt="Diagrama DER do Projeto EMA">
-</p>---
+</p>
 
-Estrutura do Projeto
+---
 
+# Estrutura do Projeto
+
+```text
 projeto-ema/
 │
 ├── apps/
@@ -133,41 +138,40 @@ projeto-ema/
 │   └── nginx/
 │
 ├── images/
-│   ├── logo.png
-│   ├── cover.png
-│   └── diagrama_der.png
 │
 ├── Dockerfile.api
 ├── package.json
 └── README.md
+```
 
 ---
 
-Funcionalidades
+# Funcionalidades
 
-Implementadas
+## Implementadas
 
-- Cadastro e autenticação de usuários
-- Recebimento de dados meteorológicos
-- API REST
-- Banco de dados PostgreSQL
-- Interface web para visualização
-- Gerenciamento de estações
-- Histórico de medições
+* Cadastro e autenticação de usuários
+* Recebimento de dados meteorológicos
+* API REST
+* Banco de dados PostgreSQL
+* Interface web para visualização
+* Gerenciamento de estações
+* Histórico de medições
 
-Em Desenvolvimento
+## Em Desenvolvimento
 
-- Triangulação automática entre estações
-- Interpolação espacial de dados
-- Dashboards avançados
-- Sistema de alertas meteorológicos
-- Suporte a múltiplas estações simultâneas
-- Mapas meteorológicos
+* Triangulação automática entre estações
+* Interpolação espacial de dados
+* Dashboards avançados
+* Sistema de alertas meteorológicos
+* Múltiplas estações simultâneas
+* Mapas meteorológicos
 
 ---
 
-Fluxo de Dados
+# Fluxo de Dados
 
+```text
 Estações Meteorológicas
            │
            ▼
@@ -179,81 +183,92 @@ Estações Meteorológicas
     ┌──────┴──────┐
     ▼             ▼
 Processamento     API
-   em C++
+ em C++
     │
     ▼
  Frontend
+```
 
 ---
 
-Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
-Categoria| Tecnologias
-Backend| Node.js, Express, Sequelize
-Frontend| React, TypeScript, Vite
-Banco de Dados| PostgreSQL, PostGIS
-Infraestrutura| Docker, Nginx
-Cache| Redis
-Processamento| C++
-Controle de Versão| Git
-Sistema Operacional| Linux
+* TypeScript
+* Node.js
+* Express
+* React
+* PostgreSQL
+* PostGIS
+* Redis
+* Docker
+* Nginx
+* C++
+* Git
+* Linux
 
 ---
 
-Instalação
+# Desenvolvimento
 
-Clonar o projeto
+## Clonando o projeto
 
+```bash
 git clone https://github.com/henryifms/projeto-ema.git
-cd projeto-ema
+```
 
-Instalar dependências
+## Instalação
 
+```bash
 yarn install
+```
 
-Executar o Frontend
+## Executando o frontend
 
+```bash
 yarn web
+```
 
-Executar a API
+## Executando a API
 
+```bash
 yarn api
+```
 
-Executar com Docker
+## Ambiente Docker
 
+```bash
 cd infra/docker
 docker compose up --build
+```
 
 ---
 
-Aplicações Acadêmicas
+# Aplicações Acadêmicas
 
-O Projeto EMA pode ser utilizado em pesquisas e estudos relacionados a:
+O Projeto EMA pode ser utilizado em estudos envolvendo:
 
-- Meteorologia
-- Estatística
-- Geoprocessamento
-- Sistemas Distribuídos
-- Banco de Dados Geográficos
-- Programação Científica
-- Internet das Coisas (IoT)
+* Meteorologia
+* Estatística
+* Geoprocessamento
+* Sistemas Distribuídos
+* Banco de Dados Geográficos
+* Programação Científica
+* Internet das Coisas (IoT)
 
 ---
 
-Contribuição
+# Contribuição
 
 Contribuições são bem-vindas.
 
-Para colaborar:
+Para reportar problemas ou sugerir melhorias:
 
-1. Faça um Fork do projeto
-2. Crie uma Branch para sua feature
-3. Faça Commit das alterações
-4. Abra um Pull Request
+* Abra uma Issue
+* Envie um Pull Request
 
 ---
 
-Autor
+# Autor
 
 Henry Thomaz
 
@@ -261,6 +276,7 @@ Instituto Federal de Mato Grosso do Sul (IFMS)
 
 ---
 
-Licença
+# Licença
 
-Este projeto é livre para uso, estudo, modificação e distribuição para fins acadêmicos, educacionais, comerciais ou pessoais.
+Este projeto é livre para uso, estudo, modificação e distribuição, para fins acadêmicos, educacionais, comerciais ou pessoais.
+
