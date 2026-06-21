@@ -2,6 +2,8 @@
 
 Sistema completo para coleta, armazenamento, processamento e visualização de dados meteorológicos em tempo real.
 
+![Logotipo do projeto](/images/cover.png)
+
 O Projeto EMA é uma iniciativa acadêmica desenvolvida no Instituto Federal de Mato Grosso do Sul (IFMS) com o objetivo de construir uma plataforma integrada de monitoramento meteorológico capaz de coletar dados ambientais, armazená-los, disponibilizá-los através de APIs e gerar análises estatísticas e espaciais a partir de múltiplas estações meteorológicas.
 
 ---
