@@ -1,0 +1,157 @@
+services:
+  # Nginx como Load Balancer e Proxy Reverso
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-load-balancer
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ../nginx/conf.d:/etc/nginx/conf.d
+      - ../nginx/html:/usr/share/nginx/html
+      - ../nginx/logs:/var/log/nginx
+    depends_on:
+      - app
+      - app2
+      - app3
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  # Múltiplas instâncias da aplicação
+  app:
+    build:
+      context: ../..
+      dockerfile: Dockerfile.api
+    container_name: servidor-ema-1
+    # ports: - "3000:3000"
+    volumes:
+      - ../../apps/api:/app/apps/api
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - INSTANCE_ID=1
+    command: yarn dev
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    env_file:
+      - ../../.env
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  app2:
+    build:
+      context: ../..
+      dockerfile: Dockerfile.api    
+    container_name: servidor-ema-2
+    volumes:
+      - ../../apps/api:/app/apps/api
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - INSTANCE_ID=2
+    command: yarn dev
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    env_file:
+      - ../../.env
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  app3:
+    build:
+      context: ../..
+      dockerfile: Dockerfile.api    
+    container_name: servidor-ema-3
+    volumes:
+      - ../../apps/api:/app/apps/api
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - INSTANCE_ID=3
+    command: yarn dev
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    env_file:
+      - ../../.env
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  migrate:
+    build:
+      context: ../..
+      dockerfile: Dockerfile.api    
+    command: sh -c "until pg_isready -h db -p 5432 -U ${DB_USER}; do sleep 2; done && yarn migrate && yarn seed"
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - ../../.env
+    networks:
+      - app-network
+
+  worker:
+    build:
+      context: ../..
+      dockerfile: Dockerfile.api    
+    container_name: servidor-ema-worker
+    command: yarn queue
+    volumes:
+      - ../../apps/api:/app/apps/api
+    depends_on:
+      - redis
+      - db
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - ../../.env
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  db:
+    image: postgis/postgis:16-3.4
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ../../apps/api/docker/postgis-init.sql:/docker-entrypoint-initdb.d/postgis-init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+    restart: unless-stopped
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  pgdata:
