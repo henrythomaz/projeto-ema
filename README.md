@@ -269,11 +269,16 @@ Para reportar problemas ou sugerir melhorias:
 
 # Autor
 
-Henry Thomaz
+Henry Thomaz Oliveira Campos
 
 Instituto Federal de Mato Grosso do Sul (IFMS)
 
 ---
+
+# Contatos
+
+henry.campos@estudante.ifms.edu.br
+henrythcampos@gmail.com
 
 # Licença
 
