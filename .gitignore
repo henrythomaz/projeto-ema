@@ -3,6 +3,7 @@ node_modules
 .yarn/cache
 .pnp.loader.mjs
 .pnp.cjs
+yarn.lock
 dist
 
 apps/api/node_modules
