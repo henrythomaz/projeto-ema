@@ -1,0 +1,16 @@
+{
+  "name": "projeto-ema",
+  "private": true,
+  "packageManager": "yarn@4.13.0",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "api": "yarn workspace ema-servidor dev",
+    "web": "yarn workspace ema-web dev",
+    "build:web": "yarn workspace ema-web build",
+    "lint:web": "yarn workspace ema-web lint",
+    "lint:api": "yarn workspace ema-servidor lint"
+  }
+}
