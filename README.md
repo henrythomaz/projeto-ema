@@ -1,11 +1,10 @@
 # Projeto EMA — Estações Meteorológicas Automáticas
 
-<p align="center" style="display: flex;">
-  <img src="./images/logo.png" alt="Logo EMA" width="180">
-  <strong>Sistema completo para coleta, armazenamento, processamento e visualização de dados meteorológicos em tempo real.</strong>
-</p>
 <p align="center">
   <img src="./images/cover.png" alt="Capa do Projeto EMA">
+</p>
+<p align="center" >
+<strong>Sistema completo para coleta, armazenamento, processamento e visualização de dados meteorológicos em tempo real.</strong>
 </p>
 
 ---
