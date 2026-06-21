@@ -2,7 +2,7 @@
 
 Sistema completo para coleta, armazenamento, processamento e visualização de dados meteorológicos em tempo real.
 
-O Projeto EMA é uma iniciativa acadêmica desenvolvida no Instituto Federal de Mato Grosso do Sul (IFMS) com o objetivo de construir uma plataforma integrada de monitoramento meteorológico capaz de coletar dados ambientais, armazená-los, disponibilizá-los através de APIs e gerar previsões utilizando técnicas de Inteligência Artificial.
+O Projeto EMA é uma iniciativa acadêmica desenvolvida no Instituto Federal de Mato Grosso do Sul (IFMS) com o objetivo de construir uma plataforma integrada de monitoramento meteorológico capaz de coletar dados ambientais, armazená-los, disponibilizá-los através de APIs e gerar análises estatísticas e espaciais a partir de múltiplas estações meteorológicas.
 
 ---
 
@@ -12,14 +12,15 @@ O Projeto EMA é uma iniciativa acadêmica desenvolvida no Instituto Federal de 
 * Armazenar informações de forma estruturada
 * Disponibilizar dados através de APIs
 * Permitir visualização e análise dos dados
-* Desenvolver modelos de previsão meteorológica com redes neurais
+* Realizar processamento estatístico dos dados coletados
+* Aplicar técnicas de triangulação e interpolação espacial
 * Servir como plataforma de pesquisa e aprendizado
 
 ---
 
 # Arquitetura do Sistema
 
-O sistema é dividido em quatro componentes principais:
+O sistema é dividido em três componentes principais.
 
 ## 1. Estações Meteorológicas
 
@@ -45,6 +46,7 @@ Responsável por:
 * Armazenar dados históricos
 * Disponibilizar API REST
 * Gerenciar autenticação e acesso
+* Integrar os serviços de processamento
 
 ### Tecnologias
 
@@ -52,24 +54,28 @@ Responsável por:
 * Express
 * Sequelize
 * PostgreSQL
+* PostGIS
+* Redis
 * Docker
 
 ---
 
-## 3. Serviço de Inteligência Artificial
+## 3. Processamento Científico
 
 Responsável por:
 
-* Processamento de séries temporais
-* Treinamento de redes neurais
-* Geração de previsões meteorológicas
-* Avaliação de modelos
+* Tratamento de dados meteorológicos
+* Cálculos estatísticos
+* Triangulação espacial entre estações
+* Interpolação de valores geográficos
+* Geração de informações derivadas
 
 ### Tecnologias
 
 * C++
-* Redes neurais desenvolvidas do zero
-* Processamento numérico
+* Algoritmos numéricos
+* Geometria computacional
+* Processamento de dados
 
 ---
 
@@ -81,14 +87,15 @@ Responsável por:
 * Dashboards meteorológicos
 * Exibição de históricos
 * Consumo da API
-* Visualização de previsões
+* Visualização geográfica das estações
+* Consulta de métricas ambientais
 
 ### Tecnologias
 
 * React
-* JavaScript
-* HTML
-* CSS
+* TypeScript
+* Vite
+* Tailwind CSS
 
 ---
 
@@ -97,26 +104,23 @@ Responsável por:
 ```text
 projeto-ema/
 │
-├── backend/
-│   ├── src/
-│   ├── database/
-│   └── docker/
+├── apps/
+│   ├── api/
+│   │   ├── src/
+│   │   └── docker/
+│   │
+│   └── web/
+│       ├── src/
+│       └── public/
 │
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── assets/
+├── infra/
+│   ├── docker/
+│   └── nginx/
 │
-├── ia/
-│   ├── datasets/
-│   ├── models/
-│   └── src/
+├── images/
 │
-├── docs/
-│   ├── pesquisa/
-│   ├── diagramas/
-│   └── relatorios/
-│
+├── Dockerfile.api
+├── package.json
 └── README.md
 ```
 
@@ -126,37 +130,61 @@ projeto-ema/
 
 ## Implementadas
 
+* Cadastro e autenticação de usuários
 * Recebimento de dados meteorológicos
-* API REST para acesso aos dados
-* Armazenamento em banco de dados
+* API REST
+* Banco de dados PostgreSQL
 * Interface web para visualização
+* Gerenciamento de estações
+* Histórico de medições
 
 ## Em Desenvolvimento
 
+* Triangulação automática entre estações
+* Interpolação espacial de dados
 * Dashboards avançados
 * Sistema de alertas meteorológicos
 * Múltiplas estações simultâneas
-* Treinamento automático de modelos
-* Previsões meteorológicas baseadas em IA
+* Mapas meteorológicos
 
 ---
 
 # Fluxo de Dados
 
 ```text
-Estação Meteorológica
-          │
-          ▼
-      Backend
-          │
- ┌────────┴────────┐
- ▼                 ▼
-Banco de Dados     IA
- │                 │
- └────────┬────────┘
-          ▼
-      Frontend
+Estações Meteorológicas
+           │
+           ▼
+        Backend
+           │
+           ▼
+ PostgreSQL/PostGIS
+           │
+    ┌──────┴──────┐
+    ▼             ▼
+Processamento     API
+ em C++
+    │
+    ▼
+ Frontend
 ```
+
+---
+
+# Tecnologias Utilizadas
+
+* TypeScript
+* Node.js
+* Express
+* React
+* PostgreSQL
+* PostGIS
+* Redis
+* Docker
+* Nginx
+* C++
+* Git
+* Linux
 
 ---
 
@@ -168,68 +196,44 @@ Banco de Dados     IA
 git clone https://github.com/henryifms/projeto-ema.git
 ```
 
-## Instalando dependências
-
-Backend:
+## Instalação
 
 ```bash
-cd backend
-npm install
+yarn install
 ```
 
-Frontend:
+## Executando o frontend
 
 ```bash
-cd frontend
-npm install
+yarn web
 ```
 
-## Executando
-
-Backend:
+## Executando a API
 
 ```bash
-npm run dev
+yarn api
 ```
 
-Frontend:
+## Ambiente Docker
 
 ```bash
-npm run dev
+cd infra/docker
+docker compose up --build
 ```
 
 ---
 
-# Documentação
+# Aplicações Acadêmicas
 
-A documentação técnica e acadêmica está localizada na pasta:
+O Projeto EMA pode ser utilizado em estudos envolvendo:
 
-```text
-docs/
-```
-
-Conteúdo:
-
-* Plano de pesquisa
-* Diagramas de arquitetura
-* Relatórios técnicos
-* Documentação da API
-* Estudos sobre redes neurais
-
----
-
-# Tecnologias Utilizadas
-
-* JavaScript
-* Node.js
-* Express
-* React
-* PostgreSQL
-* Sequelize
-* Docker
-* C++
-* Git
-* Linux
+* Meteorologia
+* Estatística
+* Geoprocessamento
+* Sistemas Distribuídos
+* Banco de Dados Geográficos
+* Programação Científica
+* Internet das Coisas (IoT)
 
 ---
 
@@ -241,7 +245,6 @@ Para reportar problemas ou sugerir melhorias:
 
 * Abra uma Issue
 * Envie um Pull Request
-* Consulte a documentação do projeto
 
 ---
 
@@ -255,5 +258,5 @@ Instituto Federal de Mato Grosso do Sul (IFMS)
 
 # Licença
 
-Este projeto é desenvolvido para fins acadêmicos, pesquisa e aprendizado.
+Este projeto é livre para uso, estudo, modificação e distribuição, para fins acadêmicos, educacionais, comerciais ou pessoais.
 
