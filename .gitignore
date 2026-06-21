@@ -1,12 +1,32 @@
-node_modules
-.git
-.yarn/cache
-.pnp.loader.mjs
-.pnp.cjs
-yarn.lock
-dist
+# Dependências
+node_modules/
+apps/*/node_modules/
 
-apps/api/node_modules
-apps/web/node_modules
+# Build
+dist/
+build/
 
+# Ambiente
 .env
+.env.*
+
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# PnP
+.pnp.*
+.yarn/install-state.gz
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Windows ADS
+*:Zone.Identifier
