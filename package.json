@@ -10,7 +10,11 @@
     "api": "yarn workspace ema-servidor dev",
     "web": "yarn workspace ema-web dev",
     "build:web": "yarn workspace ema-web build",
+    "deploy:web": "gh-pages -d apps/web/dist",
     "lint:web": "yarn workspace ema-web lint",
     "lint:api": "yarn workspace ema-servidor lint"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
