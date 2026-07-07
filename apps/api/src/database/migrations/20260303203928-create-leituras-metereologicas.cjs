@@ -29,14 +29,6 @@ module.exports = {
         type: Sequelize.FLOAT,
       },
 
-      pressao_atmosferica: {
-        type: Sequelize.FLOAT,
-      },
-
-      velocidade_vento: {
-        type: Sequelize.FLOAT,
-      },
-
       precipitacao: {
         type: Sequelize.FLOAT,
       },

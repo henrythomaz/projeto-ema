@@ -46,16 +46,23 @@ routes.get("/estacoes/:estacaoId/leituras/:id", leituras.show);
  *         application/json:
  *           schema:
  *             type: object
+ *             required:
+ *               - temperatura
+ *               - umidade
+ *               - precipitacao
  *             properties:
  *               temperatura:
  *                 type: number
  *                 example: 25.5
  *               umidade:
  *                 type: number
- *                 example: 70
+ *                 example: 70.2
+ *               precipitacao:
+ *                 type: number
+ *                 example: 512
  *     responses:
- *       201:
- *         description: Leitura registrada com sucesso
+ *       202:
+ *         description: Leitura registrada com sucesso (processamento assíncrono)
  */
 
 routes.post("/leituras", apiKey, leituras.create);

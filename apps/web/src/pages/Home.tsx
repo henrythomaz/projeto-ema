@@ -4,8 +4,10 @@ import HourlyForecast from "../components/HourlyForecast";
 import type { DadoPrevisao } from "../components/HourlyForecast";
 import { FaGithub, FaTimes } from "react-icons/fa";
 import logoIcon from "../assets/icone.png";
+import Img1 from "../assets/home-img1.png";
 import Map from "../components/Map";
 import PlanoPesquisa from "../components/PlanoPesquisa";
+import { motion } from "motion/react";
 
 const Home = () => {
   const [openPDF, setOpenPDF] = useState(false);
@@ -49,37 +51,79 @@ const Home = () => {
             >
               Documentação
             </Link>
-            <Link
-              to="/sobre"
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition"
-            >
-              Sobre
-            </Link>
-            <Link
-              to="/login"
-              className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition"
-            >
-              Entrar
-            </Link>
-          </div>
+            </div>
         </header>
 
-        <section className="py-16 px-6 bg-gradient-to-b from-green-50 to-white">
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <h2 className="text-4xl font-bold mb-4">
-                Monitoramento meteorológico inteligente
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Crie sua conta gratuitamente e acompanhe dados climáticos em
-                tempo real.
-              </p>
-            </div>
-          </div>
-        </section>
+        <section className="relative overflow-hidden bg-gradient-to-b from-green-50 to-white min-h-screen">
 
-        {/* MAPA */}
-        <section className="p-6 max-w-6xl mx-auto">
+  {/* Círculo */}
+  <motion.div
+  initial={{ opacity: 0, scale: 0.85 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{
+    duration: 1,
+    delay: 0.2,
+  }}
+  className="absolute right-[-120px] -top-52 w-[800px] h-[800px] rounded-full overflow-hidden shadow-2xl border-8 border-white"
+>
+    <img
+      src={Img1}
+      alt="Imagem"
+      className="w-full h-full object-cover"
+    />
+  </motion.div>
+
+  {/* Conteúdo */}
+  <motion.div
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative z-10 max-w-7xl mx-auto min-h-screen flex items-center px-10"
+>
+
+    <div className="max-w-xl pb-10">
+      <h2 className="text-6xl font-extrabold leading-tight text-gray-900">
+        Monitoramento
+        <br />
+        meteorológico
+        <br />
+        inteligente
+      </h2>
+
+      <p className="mt-8 text-xl text-gray-600 leading-8">
+        Crie sua conta gratuitamente e acompanhe dados climáticos em tempo real
+        através das estações meteorológicas do Projeto EMA.
+      </p>
+
+      <div className="flex gap-4 mt-10">
+        <Link
+          to="/login"
+          className="bg-green-600 text-white px-7 py-3 rounded-xl hover:bg-green-700 transition"
+        >
+          Começar agora
+        </Link>
+
+        <Link
+          to="/sobre"
+          className="border border-gray-300 px-7 py-3 rounded-xl hover:bg-gray-100 transition"
+        >
+          Saiba mais
+        </Link>
+      </div>
+    </div>
+
+  </motion.div>
+
+</section>
+
+{/* MAPA */}
+        <motion.section
+  initial={{ opacity: 0, y: 60 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.7 }}
+  className="p-6 max-w-6xl mx-auto"
+>
           <div className="flex justify-between items-end mb-4">
             <h3 className="text-2xl font-semibold text-green-600">
               Estações em tempo real
@@ -103,17 +147,81 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-full flex flex-col md:flex-row items-start gap-4 mt-10">
-            <HourlyForecast
-              dadosPrevisao={dadosPrevisao}
-              setDadosPrevisao={setDadosPrevisao}
-              loading={loadingForecast}
-              setLoading={setLoadingForecast}
-              estacaoIdExterna={estacaoSelecionada}
-            />
-          </div>
-        </section>
+          </motion.section>
 
+
+<motion.section
+  initial={{ opacity: 0, y: 60 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.7 }}
+  className="py-24 bg-white"
+>
+  <div className="max-w-7xl mx-auto px-10 flex flex-col lg:flex-row items-center gap-20">
+
+    {/* Imagem */}
+    <motion.div
+  initial={{ opacity: 0, x: -80 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="w-full lg:w-1/2"
+>
+      <img
+        src={Img1}
+        alt="Estação meteorológica"
+        className="w-full rounded-3xl shadow-2xl"
+      />
+    </motion.div>
+
+    {/* Texto */}
+    <div className="w-full lg:w-1/2">
+      <h2 className="text-5xl font-bold text-gray-900 leading-tight">
+        Dados climáticos em tempo real
+      </h2>
+
+      <p className="mt-6 text-xl text-gray-600 leading-8">
+        Acompanhe temperatura, umidade, pressão atmosférica e diversas outras
+        informações coletadas pelas estações meteorológicas do Projeto EMA,
+        permitindo um monitoramento preciso e confiável.
+      </p>
+    </div>
+
+  </div>
+</motion.section>
+
+<section className="py-32 bg-gray-50 overflow-hidden">
+  <div className="max-w-7xl mx-auto px-10 flex flex-col-reverse lg:flex-row items-center">
+
+    {/* Texto */}
+    <div className="w-full lg:w-2/5 lg:pl-16 z-10">
+      <h2 className="text-5xl font-extrabold text-gray-900 leading-tight">
+        Monitoramento
+        <br />
+        preciso e contínuo
+      </h2>
+
+      <p className="mt-6 text-lg text-gray-600 leading-8">
+        Tenha acesso a informações detalhadas sobre as condições climáticas,
+        permitindo acompanhar as variações do tempo de forma simples,
+        confiável e em tempo real.
+      </p>
+    </div>
+
+    {/* Imagem */}
+    <div className="relative w-full lg:w-3/5 flex justify-end">
+  <img
+    src={Img1}
+    alt="Monitoramento climático"
+    className="w-[750px] rounded-[40px] shadow-2xl"
+  />
+
+  <div className="absolute inset-0 rounded-[40px] bg-gradient-to-l from-transparent via-transparent to-gray-50/80" />
+</div>
+  </div>
+</section>
+
+        
         <footer className="text-center text-sm text-gray-400 p-10">
           © 2026 Projeto EMA
         </footer>

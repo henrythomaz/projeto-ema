@@ -5,8 +5,6 @@ interface AtributosLeitura {
   estacao_id: number;
   temperatura: number;
   umidade: number;
-  pressao_atmosferica: number;
-  velocidade_vento: number;
   precipitacao: number;
   data_leitura: Date;
 }
@@ -24,8 +22,6 @@ class Leitura
   declare estacao_id: number;
   declare temperatura: number;
   declare umidade: number;
-  declare pressao_atmosferica: number;
-  declare velocidade_vento: number;
   declare precipitacao: number;
   declare data_leitura: Date;
 
@@ -35,8 +31,6 @@ class Leitura
         estacao_id: DataTypes.INTEGER,
         temperatura: DataTypes.FLOAT,
         umidade: DataTypes.FLOAT,
-        pressao_atmosferica: DataTypes.FLOAT,
-        velocidade_vento: DataTypes.FLOAT,
         precipitacao: DataTypes.FLOAT,
         data_leitura: {
           type: DataTypes.DATE,
