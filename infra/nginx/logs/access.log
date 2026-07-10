@@ -1799,3 +1799,8 @@
 172.20.0.1 - - [10/Jul/2026:03:57:49 +0000] "OPTIONS /login HTTP/1.1" 204 0 "https://henrythomaz.github.io/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
 172.20.0.1 - - [10/Jul/2026:03:57:49 +0000] "POST /login HTTP/1.1" 200 225 "https://henrythomaz.github.io/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
 172.20.0.1 - - [10/Jul/2026:03:57:49 +0000] "OPTIONS /estacoes HTTP/1.1" 204 0 "https://henrythomaz.github.io/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+172.20.0.1 - - [10/Jul/2026:19:58:43 +0000] "GET /estacoes/1/leituras?sort=id%3ADESC HTTP/1.1" 200 4118 "-" "insomnia/12.6.0"
+172.20.0.1 - - [10/Jul/2026:19:59:23 +0000] "OPTIONS /estacoes HTTP/1.1" 204 0 "http://localhost:5500/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+172.20.0.1 - - [10/Jul/2026:19:59:25 +0000] "GET /estacoes HTTP/1.1" 200 3472 "http://localhost:5500/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+172.20.0.1 - - [10/Jul/2026:19:59:25 +0000] "OPTIONS /estacoes/1/leituras/ultima HTTP/1.1" 204 0 "http://localhost:5500/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+172.20.0.1 - - [10/Jul/2026:19:59:25 +0000] "GET /estacoes/1/leituras/ultima HTTP/1.1" 200 109 "http://localhost:5500/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
