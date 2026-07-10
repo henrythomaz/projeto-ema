@@ -1,0 +1,19 @@
+{
+  "name": "projeto-ema",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "yarn workspace ema-web dev",
+    "build:web": "yarn workspace ema-web build",
+    "lint": "yarn workspaces run lint",
+    "format": "yarn workspaces run format"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "eslint": "^9.39.4",
+    "typescript": "~5.9.3"
+  }
+}

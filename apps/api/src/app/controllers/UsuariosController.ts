@@ -140,10 +140,6 @@ class UsuariosController {
       return res.status(400).json({ erro: "Captcha inválido" });
     }
 
-    if (!captchaData.success) {
-      return res.status(400).json({ erro: "Captcha inválido" });
-    }
-
     // if (captchaData.hostname !== "localhost") {
     //   return res.status(400).json({ erro: "Domínio inválido" });
     // }
@@ -267,9 +263,9 @@ class UsuariosController {
     return res.json({ mensagem: "Usuário aprovado!" });
   }
 
-  async validarCaptcha(
+  validarCaptcha = async (
     token: string
-  ): Promise<{ success: boolean; hostname?: string }> {
+  ): Promise<{ success: boolean; hostname?: string }> => {
     if (!token) return { success: false };
 
     try {
