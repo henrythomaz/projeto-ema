@@ -2,6 +2,7 @@
   "name": "projeto-ema",
   "private": true,
   "packageManager": "yarn@4.13.0",
+  "version": "2.0.0",
   "workspaces": [
     "apps/api",
     "apps/web"
