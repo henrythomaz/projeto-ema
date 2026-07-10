@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import HourlyForecast from "../components/HourlyForecast";
-import type { DadoPrevisao } from "../components/HourlyForecast";
 import { FaGithub, FaTimes } from "react-icons/fa";
 import logoIcon from "../assets/icone.png";
 import Img1 from "../assets/home-img1.png";
@@ -12,11 +10,8 @@ import { motion } from "motion/react";
 const Home = () => {
   const [openPDF, setOpenPDF] = useState(false);
   const [openMap, setOpenMap] = useState(false);
-  const [dadosPrevisao, setDadosPrevisao] = useState<DadoPrevisao[]>([]);
-  const [loadingForecast, setLoadingForecast] = useState(true);
-  const [estacaoSelecionada, setEstacaoSelecionada] = useState<string | null>(
-    null,
-  );
+  //@ts-ignore
+  const [estacaoSelecionada, setEstacaoSelecionada] = useState<string | null>(null);
 
   return (
     <div className="flex font-sans">

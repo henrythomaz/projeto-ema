@@ -19,7 +19,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import { WiBarometer } from "react-icons/wi";
-import { Trash2, Edit3, Plus, Clock, AlertCircle } from "lucide-react";
+import { Trash2, Edit3, Plus } from "lucide-react";
 
 type Estacao = {
   id: number;

@@ -1,3 +1,4 @@
+import type { MetricTab } from "../components/Main/types";
 import { useParams } from "react-router-dom";
 import TableLeituras from "../components/TableLeituras";
 import { useLeituras } from "../components/Main/hooks/useLeituras";
@@ -6,7 +7,6 @@ import { useMemo, useState } from "react";
 import { SmallFiltersPanel } from "../components/Main/components/SmallFiltersPanel";
 import { MetricChartPanel } from "../components/Main/components/MetricChartPanel";
 import { buildOverlaySeries } from "../components/Main/utils/builders";
-import type { MetricTab } from "../components/Main/types";
 
 const Historico = () => {
   const { id } = useParams();
@@ -21,7 +21,7 @@ const Historico = () => {
   loading,
 } = useLeituras(id);
 
-  const [activeMetric, setActiveMetric] = useState("temperatura");
+  const [activeMetric, setActiveMetric] = useState<MetricTab>("temperatura");
 
   const chartData = useMemo(
   () =>

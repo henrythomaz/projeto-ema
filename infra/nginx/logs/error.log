@@ -1040,3 +1040,497 @@
 2026/07/06 12:53:25 [notice] 1#1: start worker process 34
 2026/07/06 12:53:25 [notice] 1#1: start worker process 35
 2026/07/06 12:53:25 [notice] 1#1: start worker process 36
+2026/07/07 19:50:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/07/07 19:50:42 [notice] 34#34: gracefully shutting down
+2026/07/07 19:50:42 [notice] 32#32: gracefully shutting down
+2026/07/07 19:50:42 [notice] 31#31: gracefully shutting down
+2026/07/07 19:50:42 [notice] 33#33: gracefully shutting down
+2026/07/07 19:50:42 [notice] 36#36: gracefully shutting down
+2026/07/07 19:50:42 [notice] 30#30: gracefully shutting down
+2026/07/07 19:50:42 [notice] 29#29: gracefully shutting down
+2026/07/07 19:50:42 [notice] 35#35: gracefully shutting down
+2026/07/07 19:50:42 [notice] 29#29: exiting
+2026/07/07 19:50:42 [notice] 32#32: exiting
+2026/07/07 19:50:42 [notice] 33#33: exiting
+2026/07/07 19:50:42 [notice] 36#36: exiting
+2026/07/07 19:50:42 [notice] 30#30: exiting
+2026/07/07 19:50:42 [notice] 31#31: exiting
+2026/07/07 19:50:42 [notice] 34#34: exiting
+2026/07/07 19:50:42 [notice] 35#35: exiting
+2026/07/07 19:50:42 [notice] 36#36: exit
+2026/07/07 19:50:42 [notice] 30#30: exit
+2026/07/07 19:50:42 [notice] 35#35: exit
+2026/07/07 19:50:42 [notice] 31#31: exit
+2026/07/07 19:50:42 [notice] 34#34: exit
+2026/07/07 19:50:42 [notice] 33#33: exit
+2026/07/07 19:50:42 [notice] 29#29: exit
+2026/07/07 19:50:42 [notice] 32#32: exit
+2026/07/07 19:50:42 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/07/07 19:50:42 [notice] 1#1: worker process 29 exited with code 0
+2026/07/07 19:50:42 [notice] 1#1: worker process 33 exited with code 0
+2026/07/07 19:50:42 [notice] 1#1: worker process 35 exited with code 0
+2026/07/07 19:50:42 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 19:50:42 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/07/07 19:50:42 [notice] 1#1: worker process 30 exited with code 0
+2026/07/07 19:50:42 [notice] 1#1: worker process 32 exited with code 0
+2026/07/07 19:50:42 [notice] 1#1: worker process 34 exited with code 0
+2026/07/07 19:50:42 [notice] 1#1: worker process 36 exited with code 0
+2026/07/07 19:50:42 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 19:50:42 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/07/07 19:50:42 [notice] 1#1: worker process 31 exited with code 0
+2026/07/07 19:50:42 [notice] 1#1: exit
+2026/07/07 19:54:56 [notice] 1#1: using the "epoll" event method
+2026/07/07 19:54:56 [notice] 1#1: nginx/1.31.2
+2026/07/07 19:54:56 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/07/07 19:54:56 [notice] 1#1: OS: Linux 6.18.33.2-microsoft-standard-WSL2
+2026/07/07 19:54:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2026/07/07 19:54:56 [notice] 1#1: start worker processes
+2026/07/07 19:54:56 [notice] 1#1: start worker process 30
+2026/07/07 19:54:56 [notice] 1#1: start worker process 31
+2026/07/07 19:54:56 [notice] 1#1: start worker process 32
+2026/07/07 19:54:56 [notice] 1#1: start worker process 33
+2026/07/07 19:54:56 [notice] 1#1: start worker process 34
+2026/07/07 19:54:56 [notice] 1#1: start worker process 35
+2026/07/07 19:54:56 [notice] 1#1: start worker process 36
+2026/07/07 19:54:56 [notice] 1#1: start worker process 37
+2026/07/07 20:15:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/07/07 20:15:14 [notice] 30#30: gracefully shutting down
+2026/07/07 20:15:14 [notice] 31#31: gracefully shutting down
+2026/07/07 20:15:14 [notice] 33#33: gracefully shutting down
+2026/07/07 20:15:14 [notice] 32#32: gracefully shutting down
+2026/07/07 20:15:14 [notice] 34#34: gracefully shutting down
+2026/07/07 20:15:14 [notice] 35#35: gracefully shutting down
+2026/07/07 20:15:14 [notice] 36#36: gracefully shutting down
+2026/07/07 20:15:14 [notice] 31#31: exiting
+2026/07/07 20:15:14 [notice] 34#34: exiting
+2026/07/07 20:15:14 [notice] 32#32: exiting
+2026/07/07 20:15:14 [notice] 33#33: exiting
+2026/07/07 20:15:14 [notice] 37#37: gracefully shutting down
+2026/07/07 20:15:14 [notice] 35#35: exiting
+2026/07/07 20:15:14 [notice] 30#30: exiting
+2026/07/07 20:15:14 [notice] 36#36: exiting
+2026/07/07 20:15:14 [notice] 37#37: exiting
+2026/07/07 20:15:14 [notice] 35#35: exit
+2026/07/07 20:15:14 [notice] 31#31: exit
+2026/07/07 20:15:14 [notice] 33#33: exit
+2026/07/07 20:15:14 [notice] 34#34: exit
+2026/07/07 20:15:14 [notice] 30#30: exit
+2026/07/07 20:15:14 [notice] 36#36: exit
+2026/07/07 20:15:14 [notice] 37#37: exit
+2026/07/07 20:15:14 [notice] 32#32: exit
+2026/07/07 20:15:14 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/07/07 20:15:14 [notice] 1#1: worker process 31 exited with code 0
+2026/07/07 20:15:14 [notice] 1#1: worker process 33 exited with code 0
+2026/07/07 20:15:14 [notice] 1#1: worker process 34 exited with code 0
+2026/07/07 20:15:14 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:15:14 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2026/07/07 20:15:14 [notice] 1#1: worker process 37 exited with code 0
+2026/07/07 20:15:14 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:15:14 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/07/07 20:15:14 [notice] 1#1: worker process 30 exited with code 0
+2026/07/07 20:15:14 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:15:14 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/07/07 20:15:14 [notice] 1#1: worker process 35 exited with code 0
+2026/07/07 20:15:14 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:15:14 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2026/07/07 20:15:14 [notice] 1#1: worker process 36 exited with code 0
+2026/07/07 20:15:14 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:15:14 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/07/07 20:15:14 [notice] 1#1: worker process 32 exited with code 0
+2026/07/07 20:15:14 [notice] 1#1: exit
+2026/07/07 20:15:51 [notice] 1#1: using the "epoll" event method
+2026/07/07 20:15:51 [notice] 1#1: nginx/1.31.2
+2026/07/07 20:15:51 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/07/07 20:15:51 [notice] 1#1: OS: Linux 6.18.33.2-microsoft-standard-WSL2
+2026/07/07 20:15:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2026/07/07 20:15:51 [notice] 1#1: start worker processes
+2026/07/07 20:15:51 [notice] 1#1: start worker process 30
+2026/07/07 20:15:51 [notice] 1#1: start worker process 31
+2026/07/07 20:15:51 [notice] 1#1: start worker process 32
+2026/07/07 20:15:51 [notice] 1#1: start worker process 33
+2026/07/07 20:15:51 [notice] 1#1: start worker process 34
+2026/07/07 20:15:51 [notice] 1#1: start worker process 35
+2026/07/07 20:15:51 [notice] 1#1: start worker process 36
+2026/07/07 20:15:51 [notice] 1#1: start worker process 37
+2026/07/07 20:19:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/07/07 20:19:47 [notice] 31#31: gracefully shutting down
+2026/07/07 20:19:47 [notice] 30#30: gracefully shutting down
+2026/07/07 20:19:48 [notice] 35#35: gracefully shutting down
+2026/07/07 20:19:48 [notice] 32#32: gracefully shutting down
+2026/07/07 20:19:48 [notice] 34#34: gracefully shutting down
+2026/07/07 20:19:47 [notice] 31#31: exiting
+2026/07/07 20:19:48 [notice] 34#34: exiting
+2026/07/07 20:19:47 [notice] 30#30: exiting
+2026/07/07 20:19:48 [notice] 36#36: gracefully shutting down
+2026/07/07 20:19:48 [notice] 32#32: exiting
+2026/07/07 20:19:48 [notice] 37#37: gracefully shutting down
+2026/07/07 20:19:48 [notice] 33#33: gracefully shutting down
+2026/07/07 20:19:47 [notice] 31#31: exit
+2026/07/07 20:19:48 [notice] 32#32: exit
+2026/07/07 20:19:47 [notice] 30#30: exit
+2026/07/07 20:19:48 [notice] 34#34: exit
+2026/07/07 20:19:48 [notice] 36#36: exiting
+2026/07/07 20:19:48 [notice] 36#36: exit
+2026/07/07 20:19:48 [notice] 35#35: exiting
+2026/07/07 20:19:48 [notice] 35#35: exit
+2026/07/07 20:19:48 [notice] 37#37: exiting
+2026/07/07 20:19:48 [notice] 37#37: exit
+2026/07/07 20:19:48 [notice] 33#33: exiting
+2026/07/07 20:19:48 [notice] 33#33: exit
+2026/07/07 20:19:48 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2026/07/07 20:19:48 [notice] 1#1: worker process 31 exited with code 0
+2026/07/07 20:19:48 [notice] 1#1: worker process 33 exited with code 0
+2026/07/07 20:19:48 [notice] 1#1: worker process 37 exited with code 0
+2026/07/07 20:19:48 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:19:48 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/07/07 20:19:48 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2026/07/07 20:19:48 [notice] 1#1: worker process 35 exited with code 0
+2026/07/07 20:19:48 [notice] 1#1: worker process 36 exited with code 0
+2026/07/07 20:19:48 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:19:48 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/07/07 20:19:48 [notice] 1#1: worker process 30 exited with code 0
+2026/07/07 20:19:48 [notice] 1#1: worker process 32 exited with code 0
+2026/07/07 20:19:48 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:19:48 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/07/07 20:19:48 [notice] 1#1: worker process 34 exited with code 0
+2026/07/07 20:19:48 [notice] 1#1: exit
+2026/07/07 20:20:13 [notice] 1#1: using the "epoll" event method
+2026/07/07 20:20:13 [notice] 1#1: nginx/1.31.2
+2026/07/07 20:20:13 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/07/07 20:20:13 [notice] 1#1: OS: Linux 6.18.33.2-microsoft-standard-WSL2
+2026/07/07 20:20:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2026/07/07 20:20:13 [notice] 1#1: start worker processes
+2026/07/07 20:20:13 [notice] 1#1: start worker process 29
+2026/07/07 20:20:13 [notice] 1#1: start worker process 30
+2026/07/07 20:20:13 [notice] 1#1: start worker process 31
+2026/07/07 20:20:13 [notice] 1#1: start worker process 32
+2026/07/07 20:20:13 [notice] 1#1: start worker process 33
+2026/07/07 20:20:13 [notice] 1#1: start worker process 34
+2026/07/07 20:20:13 [notice] 1#1: start worker process 35
+2026/07/07 20:20:13 [notice] 1#1: start worker process 36
+2026/07/07 20:23:57 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/07/07 20:23:57 [notice] 29#29: gracefully shutting down
+2026/07/07 20:23:57 [notice] 32#32: gracefully shutting down
+2026/07/07 20:23:57 [notice] 32#32: exiting
+2026/07/07 20:23:57 [notice] 30#30: gracefully shutting down
+2026/07/07 20:23:57 [notice] 34#34: gracefully shutting down
+2026/07/07 20:23:57 [notice] 30#30: exiting
+2026/07/07 20:23:57 [notice] 33#33: gracefully shutting down
+2026/07/07 20:23:57 [notice] 29#29: exiting
+2026/07/07 20:23:57 [notice] 34#34: exiting
+2026/07/07 20:23:57 [notice] 33#33: exiting
+2026/07/07 20:23:57 [notice] 36#36: gracefully shutting down
+2026/07/07 20:23:57 [notice] 31#31: gracefully shutting down
+2026/07/07 20:23:57 [notice] 36#36: exiting
+2026/07/07 20:23:57 [notice] 35#35: gracefully shutting down
+2026/07/07 20:23:57 [notice] 31#31: exiting
+2026/07/07 20:23:57 [notice] 35#35: exiting
+2026/07/07 20:23:57 [notice] 36#36: exit
+2026/07/07 20:23:57 [notice] 34#34: exit
+2026/07/07 20:23:57 [notice] 33#33: exit
+2026/07/07 20:23:57 [notice] 35#35: exit
+2026/07/07 20:23:57 [notice] 30#30: exit
+2026/07/07 20:23:57 [notice] 31#31: exit
+2026/07/07 20:23:57 [notice] 29#29: exit
+2026/07/07 20:23:57 [notice] 32#32: exit
+2026/07/07 20:23:58 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/07/07 20:23:58 [notice] 1#1: worker process 29 exited with code 0
+2026/07/07 20:23:58 [notice] 1#1: worker process 30 exited with code 0
+2026/07/07 20:23:58 [notice] 1#1: worker process 35 exited with code 0
+2026/07/07 20:23:58 [notice] 1#1: worker process 36 exited with code 0
+2026/07/07 20:23:58 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:23:58 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/07/07 20:23:58 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/07/07 20:23:58 [notice] 1#1: worker process 32 exited with code 0
+2026/07/07 20:23:58 [notice] 1#1: worker process 33 exited with code 0
+2026/07/07 20:23:58 [notice] 1#1: worker process 34 exited with code 0
+2026/07/07 20:23:58 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/07/07 20:23:58 [notice] 1#1: worker process 31 exited with code 0
+2026/07/07 20:23:58 [notice] 1#1: exit
+2026/07/07 20:25:39 [notice] 1#1: using the "epoll" event method
+2026/07/07 20:25:39 [notice] 1#1: nginx/1.31.2
+2026/07/07 20:25:39 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/07/07 20:25:39 [notice] 1#1: OS: Linux 6.18.33.2-microsoft-standard-WSL2
+2026/07/07 20:25:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2026/07/07 20:25:39 [notice] 1#1: start worker processes
+2026/07/07 20:25:39 [notice] 1#1: start worker process 29
+2026/07/07 20:25:39 [notice] 1#1: start worker process 30
+2026/07/07 20:25:39 [notice] 1#1: start worker process 31
+2026/07/07 20:25:39 [notice] 1#1: start worker process 32
+2026/07/07 20:25:39 [notice] 1#1: start worker process 33
+2026/07/07 20:25:39 [notice] 1#1: start worker process 34
+2026/07/07 20:25:39 [notice] 1#1: start worker process 35
+2026/07/07 20:25:39 [notice] 1#1: start worker process 36
+2026/07/07 20:38:04 [error] 34#34: *9 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /usuarios HTTP/1.1", upstream: "http://172.20.0.6:3000/usuarios", host: "localhost"
+2026/07/07 20:38:04 [error] 29#29: *6 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /usuarios HTTP/1.1", upstream: "http://172.20.0.6:3000/usuarios", host: "localhost"
+2026/07/07 20:41:16 [error] 33#33: *16 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /usuarios HTTP/1.1", upstream: "http://172.20.0.6:3000/usuarios", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/07 20:47:04 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/07/07 20:47:04 [notice] 29#29: gracefully shutting down
+2026/07/07 20:47:04 [notice] 34#34: gracefully shutting down
+2026/07/07 20:47:04 [notice] 31#31: gracefully shutting down
+2026/07/07 20:47:04 [notice] 30#30: gracefully shutting down
+2026/07/07 20:47:04 [notice] 36#36: gracefully shutting down
+2026/07/07 20:47:04 [notice] 33#33: gracefully shutting down
+2026/07/07 20:47:04 [notice] 35#35: gracefully shutting down
+2026/07/07 20:47:04 [notice] 32#32: gracefully shutting down
+2026/07/07 20:47:04 [notice] 29#29: exiting
+2026/07/07 20:47:04 [notice] 35#35: exiting
+2026/07/07 20:47:04 [notice] 36#36: exiting
+2026/07/07 20:47:04 [notice] 34#34: exiting
+2026/07/07 20:47:04 [notice] 29#29: exit
+2026/07/07 20:47:04 [notice] 34#34: exit
+2026/07/07 20:47:04 [notice] 31#31: exiting
+2026/07/07 20:47:04 [notice] 36#36: exit
+2026/07/07 20:47:04 [notice] 35#35: exit
+2026/07/07 20:47:04 [notice] 31#31: exit
+2026/07/07 20:47:04 [notice] 30#30: exiting
+2026/07/07 20:47:04 [notice] 32#32: exiting
+2026/07/07 20:47:04 [notice] 30#30: exit
+2026/07/07 20:47:04 [notice] 33#33: exiting
+2026/07/07 20:47:04 [notice] 32#32: exit
+2026/07/07 20:47:04 [notice] 33#33: exit
+2026/07/07 20:47:04 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/07/07 20:47:04 [notice] 1#1: worker process 31 exited with code 0
+2026/07/07 20:47:04 [notice] 1#1: worker process 29 exited with code 0
+2026/07/07 20:47:04 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:47:04 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/07/07 20:47:04 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2026/07/07 20:47:04 [notice] 1#1: worker process 36 exited with code 0
+2026/07/07 20:47:04 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:47:04 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/07/07 20:47:04 [notice] 1#1: worker process 35 exited with code 0
+2026/07/07 20:47:04 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:47:05 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/07/07 20:47:05 [notice] 1#1: worker process 34 exited with code 0
+2026/07/07 20:47:05 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:47:05 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/07/07 20:47:05 [notice] 1#1: worker process 30 exited with code 0
+2026/07/07 20:47:05 [notice] 1#1: worker process 32 exited with code 0
+2026/07/07 20:47:05 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/07 20:47:05 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2026/07/07 20:47:05 [notice] 1#1: worker process 33 exited with code 0
+2026/07/07 20:47:05 [notice] 1#1: exit
+2026/07/08 01:19:52 [notice] 1#1: using the "epoll" event method
+2026/07/08 01:19:52 [notice] 1#1: nginx/1.31.2
+2026/07/08 01:19:52 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/07/08 01:19:52 [notice] 1#1: OS: Linux 6.18.33.2-microsoft-standard-WSL2
+2026/07/08 01:19:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2026/07/08 01:19:52 [notice] 1#1: start worker processes
+2026/07/08 01:19:52 [notice] 1#1: start worker process 29
+2026/07/08 01:19:52 [notice] 1#1: start worker process 30
+2026/07/08 01:19:52 [notice] 1#1: start worker process 31
+2026/07/08 01:19:52 [notice] 1#1: start worker process 32
+2026/07/08 01:19:52 [notice] 1#1: start worker process 33
+2026/07/08 01:19:52 [notice] 1#1: start worker process 34
+2026/07/08 01:19:52 [notice] 1#1: start worker process 35
+2026/07/08 01:19:52 [notice] 1#1: start worker process 36
+2026/07/08 01:21:30 [error] 29#29: *1 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /estacoes HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:21:30 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /estacoes HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:22:05 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:22:08 [error] 31#31: *8 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:22:08 [error] 31#31: *8 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:22:08 [error] 29#29: *1 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:22:35 [error] 32#32: *13 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://172.20.0.6:3000/", host: "localhost"
+2026/07/08 01:22:35 [error] 32#32: *13 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://172.20.0.5:3000/", host: "localhost"
+2026/07/08 01:22:40 [error] 31#31: *8 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:22:43 [error] 30#30: *21 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:22:43 [error] 30#30: *21 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:22:52 [error] 32#32: *13 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://172.20.0.5:3000/", host: "localhost"
+2026/07/08 01:23:00 [error] 32#32: *13 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes", host: "localhost"
+2026/07/08 01:24:37 [error] 35#35: *29 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /login HTTP/1.1", upstream: "http://172.20.0.6:3000/login", host: "localhost"
+2026/07/08 01:24:37 [error] 35#35: *29 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /login HTTP/1.1", upstream: "http://172.20.0.5:3000/login", host: "localhost"
+2026/07/08 01:29:02 [error] 33#33: *33 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /estacoes HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes", host: "localhost"
+2026/07/08 01:29:02 [error] 33#33: *33 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /estacoes HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes", host: "localhost"
+2026/07/08 01:31:40 [error] 36#36: *37 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /estacoes HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes", host: "localhost"
+2026/07/08 01:31:40 [error] 36#36: *37 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /estacoes HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes", host: "localhost"
+2026/07/08 01:33:33 [error] 36#36: *37 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /estacoes HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes", host: "localhost"
+2026/07/08 01:33:49 [error] 36#36: *37 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.6:3000/leituras", host: "localhost"
+2026/07/08 01:34:07 [error] 36#36: *37 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.5:3000/leituras", host: "localhost"
+2026/07/08 01:34:19 [error] 36#36: *37 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.6:3000/leituras", host: "localhost"
+2026/07/08 01:34:47 [error] 36#36: *37 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.5:3000/leituras", host: "localhost"
+2026/07/08 01:34:50 [error] 36#36: *37 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.6:3000/leituras", host: "localhost"
+2026/07/08 01:34:59 [error] 29#29: *57 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:35:02 [error] 29#29: *56 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:35:13 [error] 34#34: *62 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost"
+2026/07/08 01:35:13 [error] 34#34: *62 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost"
+2026/07/08 01:35:24 [error] 29#29: *57 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:35:27 [error] 29#29: *57 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:35:54 [error] 29#29: *57 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:35:54 [error] 29#29: *57 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:37:28 [error] 29#29: *75 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:37:31 [error] 29#29: *75 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:37:49 [error] 29#29: *75 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:37:52 [error] 29#29: *75 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:39:09 [error] 29#29: *84 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:39:09 [error] 29#29: *84 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:41:39 [error] 29#29: *88 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:41:42 [error] 29#29: *88 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:42:01 [error] 29#29: *93 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:42:04 [error] 29#29: *93 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:43:16 [error] 29#29: *96 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:43:17 [error] 29#29: *96 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:43:31 [error] 29#29: *101 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:43:31 [error] 29#29: *101 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:44:34 [error] 29#29: *101 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:44:37 [error] 29#29: *101 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:45:48 [error] 29#29: *110 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:45:48 [error] 29#29: *110 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:46:08 [error] 29#29: *110 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:46:08 [error] 29#29: *110 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:46:23 [error] 29#29: *118 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:46:27 [error] 29#29: *118 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:47:42 [error] 29#29: *121 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:47:45 [error] 29#29: *121 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:47:53 [error] 29#29: *121 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:50:05 [error] 29#29: *128 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.6:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:50:05 [error] 29#29: *128 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:52:52 [error] 31#31: *132 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:52:53 [error] 31#31: *133 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:53:20 [error] 31#31: *133 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /estacoes HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:53:22 [error] 31#31: *132 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:53:31 [error] 31#31: *133 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.5:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:53:59 [error] 31#31: *133 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.6:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:53:59 [error] 31#31: *133 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /docs.json HTTP/1.1", upstream: "http://172.20.0.5:3000/docs.json", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 01:55:03 [error] 31#31: *146 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /usuarios HTTP/1.1", upstream: "http://172.20.0.5:3000/usuarios", host: "localhost"
+2026/07/08 01:55:15 [error] 31#31: *146 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /usuarios HTTP/1.1", upstream: "http://172.20.0.6:3000/usuarios", host: "localhost"
+2026/07/08 01:56:32 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/07/08 01:56:32 [notice] 29#29: gracefully shutting down
+2026/07/08 01:56:32 [notice] 31#31: gracefully shutting down
+2026/07/08 01:56:32 [notice] 30#30: gracefully shutting down
+2026/07/08 01:56:32 [notice] 32#32: gracefully shutting down
+2026/07/08 01:56:32 [notice] 30#30: exiting
+2026/07/08 01:56:32 [notice] 30#30: exit
+2026/07/08 01:56:32 [notice] 33#33: gracefully shutting down
+2026/07/08 01:56:32 [notice] 34#34: gracefully shutting down
+2026/07/08 01:56:32 [notice] 33#33: exiting
+2026/07/08 01:56:32 [notice] 33#33: exit
+2026/07/08 01:56:32 [notice] 31#31: exiting
+2026/07/08 01:56:32 [notice] 35#35: gracefully shutting down
+2026/07/08 01:56:32 [notice] 36#36: gracefully shutting down
+2026/07/08 01:56:32 [notice] 29#29: exiting
+2026/07/08 01:56:32 [notice] 34#34: exiting
+2026/07/08 01:56:32 [notice] 29#29: exit
+2026/07/08 01:56:32 [notice] 31#31: exit
+2026/07/08 01:56:32 [notice] 34#34: exit
+2026/07/08 01:56:32 [notice] 35#35: exiting
+2026/07/08 01:56:32 [notice] 32#32: exiting
+2026/07/08 01:56:32 [notice] 32#32: exit
+2026/07/08 01:56:32 [notice] 35#35: exit
+2026/07/08 01:56:32 [notice] 36#36: exiting
+2026/07/08 01:56:33 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/07/08 01:56:33 [notice] 1#1: worker process 33 exited with code 0
+2026/07/08 01:56:33 [notice] 1#1: worker process 34 exited with code 0
+2026/07/08 01:56:33 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 01:56:32 [notice] 36#36: exit
+2026/07/08 01:56:33 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/07/08 01:56:33 [notice] 1#1: worker process 29 exited with code 0
+2026/07/08 01:56:33 [notice] 1#1: worker process 32 exited with code 0
+2026/07/08 01:56:33 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 01:56:33 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/07/08 01:56:33 [notice] 1#1: worker process 35 exited with code 0
+2026/07/08 01:56:33 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 01:56:33 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/07/08 01:56:33 [notice] 1#1: worker process 30 exited with code 0
+2026/07/08 01:56:33 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 01:56:33 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/07/08 01:56:33 [notice] 1#1: worker process 31 exited with code 0
+2026/07/08 01:56:33 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 01:56:33 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2026/07/08 01:56:33 [notice] 1#1: worker process 36 exited with code 0
+2026/07/08 01:56:33 [notice] 1#1: exit
+2026/07/08 11:14:37 [notice] 1#1: using the "epoll" event method
+2026/07/08 11:14:37 [notice] 1#1: nginx/1.31.2
+2026/07/08 11:14:37 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/07/08 11:14:37 [notice] 1#1: OS: Linux 6.18.33.2-microsoft-standard-WSL2
+2026/07/08 11:14:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2026/07/08 11:14:37 [notice] 1#1: start worker processes
+2026/07/08 11:14:37 [notice] 1#1: start worker process 30
+2026/07/08 11:14:37 [notice] 1#1: start worker process 31
+2026/07/08 11:14:37 [notice] 1#1: start worker process 32
+2026/07/08 11:14:37 [notice] 1#1: start worker process 33
+2026/07/08 11:14:37 [notice] 1#1: start worker process 34
+2026/07/08 11:14:37 [notice] 1#1: start worker process 35
+2026/07/08 11:14:37 [notice] 1#1: start worker process 36
+2026/07/08 11:14:37 [notice] 1#1: start worker process 37
+2026/07/08 11:28:17 [error] 32#32: *17 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.2:3000/leituras", host: "localhost"
+2026/07/08 11:35:49 [error] 32#32: *28 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1 HTTP/1.1", upstream: "http://172.20.0.2:3000/estacoes/1", host: "localhost"
+2026/07/08 11:36:31 [error] 32#32: *28 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras?sort=id%3ADESC HTTP/1.1", upstream: "http://172.20.0.2:3000/estacoes/1/leituras?sort=id%3ADESC", host: "localhost"
+2026/07/08 11:37:56 [error] 32#32: *41 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.2:3000/leituras", host: "localhost"
+2026/07/08 11:43:21 [error] 32#32: *53 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras?sort=id%3ADESC HTTP/1.1", upstream: "http://172.20.0.2:3000/estacoes/1/leituras?sort=id%3ADESC", host: "localhost"
+2026/07/08 11:51:00 [error] 31#31: *65 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras?sort=id%3ADESC HTTP/1.1", upstream: "http://172.20.0.2:3000/estacoes/1/leituras?sort=id%3ADESC", host: "localhost"
+2026/07/08 11:57:46 [error] 31#31: *71 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras?sort=id%3ADESC HTTP/1.1", upstream: "http://172.20.0.2:3000/estacoes/1/leituras?sort=id%3ADESC", host: "localhost"
+2026/07/08 11:58:05 [error] 31#31: *71 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras?sort=id%3ADESC HTTP/1.1", upstream: "http://172.20.0.2:3000/estacoes/1/leituras?sort=id%3ADESC", host: "localhost"
+2026/07/08 12:03:01 [error] 31#31: *93 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.2:3000/leituras", host: "localhost"
+2026/07/08 12:10:01 [error] 30#30: *106 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.2:3000/leituras", host: "localhost"
+2026/07/08 12:15:01 [error] 30#30: *119 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.2:3000/leituras", host: "localhost"
+2026/07/08 12:29:17 [error] 30#30: *123 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.2:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 12:38:17 [error] 30#30: *131 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes HTTP/1.1", upstream: "http://172.20.0.2:3000/estacoes", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 12:41:05 [error] 30#30: *138 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "OPTIONS /estacoes/1/leituras/ultima HTTP/1.1", upstream: "http://172.20.0.2:3000/estacoes/1/leituras/ultima", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 12:54:51 [error] 34#34: *145 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /usuarios HTTP/1.1", upstream: "http://172.20.0.2:3000/usuarios", host: "localhost", referrer: "http://localhost:5500/"
+2026/07/08 15:12:05 [error] 34#34: *159 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.2:3000/leituras", host: "localhost"
+2026/07/08 15:15:58 [error] 34#34: *168 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /estacoes/1/leituras?sort=id%3ADESC HTTP/1.1", upstream: "http://172.20.0.2:3000/estacoes/1/leituras?sort=id%3ADESC", host: "localhost"
+2026/07/08 15:18:05 [error] 34#34: *179 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.2:3000/leituras", host: "localhost"
+2026/07/08 15:21:05 [error] 35#35: *186 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "POST /leituras HTTP/1.1", upstream: "http://172.20.0.2:3000/leituras", host: "localhost"
+2026/07/08 19:18:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/07/08 19:18:39 [notice] 30#30: gracefully shutting down
+2026/07/08 19:18:39 [notice] 31#31: gracefully shutting down
+2026/07/08 19:18:39 [notice] 35#35: gracefully shutting down
+2026/07/08 19:18:39 [notice] 30#30: exiting
+2026/07/08 19:18:40 [notice] 34#34: gracefully shutting down
+2026/07/08 19:18:40 [notice] 33#33: gracefully shutting down
+2026/07/08 19:18:39 [notice] 35#35: exiting
+2026/07/08 19:18:40 [notice] 36#36: gracefully shutting down
+2026/07/08 19:18:40 [notice] 32#32: gracefully shutting down
+2026/07/08 19:18:39 [notice] 35#35: exit
+2026/07/08 19:18:40 [notice] 37#37: gracefully shutting down
+2026/07/08 19:18:39 [notice] 30#30: exit
+2026/07/08 19:18:40 [notice] 37#37: exiting
+2026/07/08 19:18:40 [notice] 34#34: exiting
+2026/07/08 19:18:40 [notice] 37#37: exit
+2026/07/08 19:18:40 [notice] 34#34: exit
+2026/07/08 19:18:40 [notice] 36#36: exiting
+2026/07/08 19:18:40 [notice] 36#36: exit
+2026/07/08 19:18:40 [notice] 33#33: exiting
+2026/07/08 19:18:39 [notice] 31#31: exiting
+2026/07/08 19:18:40 [notice] 33#33: exit
+2026/07/08 19:18:40 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/07/08 19:18:40 [notice] 1#1: worker process 34 exited with code 0
+2026/07/08 19:18:40 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 19:18:39 [notice] 31#31: exit
+2026/07/08 19:18:40 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/07/08 19:18:40 [notice] 1#1: worker process 30 exited with code 0
+2026/07/08 19:18:40 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 19:18:40 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/07/08 19:18:40 [notice] 1#1: worker process 35 exited with code 0
+2026/07/08 19:18:40 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 19:18:41 [notice] 1#1: signal 17 (SIGCHLD) received from 36
+2026/07/08 19:18:41 [notice] 1#1: worker process 36 exited with code 0
+2026/07/08 19:18:41 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 19:18:41 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2026/07/08 19:18:41 [notice] 1#1: worker process 37 exited with code 0
+2026/07/08 19:18:41 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 19:18:40 [notice] 32#32: exiting
+2026/07/08 19:18:41 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2026/07/08 19:18:41 [notice] 1#1: worker process 33 exited with code 0
+2026/07/08 19:18:41 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 19:18:40 [notice] 32#32: exit
+2026/07/08 19:18:41 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/07/08 19:18:41 [notice] 1#1: worker process 31 exited with code 0
+2026/07/08 19:18:41 [notice] 1#1: signal 29 (SIGIO) received
+2026/07/08 19:18:41 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/07/08 19:18:41 [notice] 1#1: worker process 32 exited with code 0
+2026/07/08 19:18:41 [notice] 1#1: exit
+2026/07/10 02:03:01 [notice] 1#1: using the "epoll" event method
+2026/07/10 02:03:01 [notice] 1#1: nginx/1.31.2
+2026/07/10 02:03:01 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/07/10 02:03:01 [notice] 1#1: OS: Linux 6.18.33.2-microsoft-standard-WSL2
+2026/07/10 02:03:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:1048576
+2026/07/10 02:03:01 [notice] 1#1: start worker processes
+2026/07/10 02:03:01 [notice] 1#1: start worker process 30
+2026/07/10 02:03:01 [notice] 1#1: start worker process 31
+2026/07/10 02:03:01 [notice] 1#1: start worker process 32
+2026/07/10 02:03:01 [notice] 1#1: start worker process 33
+2026/07/10 02:03:01 [notice] 1#1: start worker process 34
+2026/07/10 02:03:01 [notice] 1#1: start worker process 35
+2026/07/10 02:03:01 [notice] 1#1: start worker process 36
+2026/07/10 02:03:01 [notice] 1#1: start worker process 37

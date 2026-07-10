@@ -1,24 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa6";
-import type { EstacaoResumo, Leitura } from "../types";
-import { formatDate } from "../utils/formatters";
-import { statusMap } from "../utils/constants";
 
-interface EstacaoHeaderProps {
-  estacao: EstacaoResumo;
-  ultimaLeitura: Leitura | null;
-  leiturasCount: number;
-  equipeCount: number;
-  convitesCount: number;
-}
-
-export function EstacaoHeader({
-  estacao,
-  ultimaLeitura,
-  leiturasCount,
-  equipeCount,
-  convitesCount,
-}: EstacaoHeaderProps) {
+export function EstacaoHeader() {
   return (
     <>
       <div className="px-6 pt-4">

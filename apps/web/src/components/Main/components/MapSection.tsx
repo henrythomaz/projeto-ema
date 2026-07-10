@@ -1,24 +1,12 @@
-import { FaSatellite, FaMagnifyingGlass, FaLocationDot } from "react-icons/fa6";
 import Map from "../../Map";
 import type { EstacaoResumo } from "../types";
-import type { NearestStationInfo } from "../types";
 
 interface MapSectionProps {
   estacao: EstacaoResumo;
-  todasEstacoes: EstacaoResumo[];
-  selectedStations: number[];
-  onStationToggle: (stationId: number) => void;
-  onFindNearest: () => void;
-  nearestInfo: NearestStationInfo | null;
 }
 
 export function MapSection({
-  estacao,
-  todasEstacoes,
-  selectedStations,
-  onStationToggle,
-  onFindNearest,
-  nearestInfo,
+  estacao
 }: MapSectionProps) {
   return (
     <section className="rounded-xl border border-gray-100 bg-gray-50 p-4 shadow-sm">
