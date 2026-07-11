@@ -8,6 +8,7 @@
 #include <ArduinoJson.h>      // Biblioteca para manipulação de JSON
 #include <WiFi.h>             // Conexão WiFi no ESP32
 #include <HTTPClient.h>       // Cliente HTTP para enviar dados à API
+#include <ArduinoOTA.h>       // Permite boot por WiFi
 
 // PINOS
 #define DHTPIN 4              // Pino do sensor DHT22
@@ -290,10 +291,9 @@ void gravarNoSD(DateTime agora) {
   }
 
   // Impressão serial dos dados (a cada minuto)
-  char dataHora[20];
-  sprintf(dataHora, "%02d/%02d/%04d %02d:%02d:%02d",
-          agora.day(), agora.month(), agora.year(),
-          agora.hour(), agora.minute(), agora.second());
+  char dataHora[20];  
+  sprintf(dataHora, "%02d/%02d/%04d %02d:%02d:%02d", agora.day(), agora.month(), agora.year(), agora.hour(), agora.minute(), agora.second());
+
   Serial.print("[DADO] ");
   Serial.print(dataHora);
   Serial.print(" | Temp: ");
@@ -422,8 +422,43 @@ void setup() {
   // Tenta conectar usando a lista
   if (conectarWiFi()) {
     Serial.println("[INFO] WiFi conectado com sucesso.");
+    
+    // ===== CONFIGURAÇÃO DO OTA =====
+    ArduinoOTA.setHostname("ESP32_Estacao_Meteo");   // Nome que aparecerá na rede
+    ArduinoOTA.setPassword("admin");                 // Senha para atualização (opcional, mas recomendado)
+
+    // Callbacks (opcionais, mas úteis para depuração)
+    ArduinoOTA.onStart([]() {
+      String type;
+      if (ArduinoOTA.getCommand() == U_FLASH) {
+        type = "sketch";
+      } else { // U_SPIFFS
+        type = "filesystem";
+      }
+      Serial.println("[OTA] Iniciando atualização: " + type);
+    });
+    ArduinoOTA.onEnd([]() {
+      Serial.println("\n[OTA] Atualização concluída!");
+    });
+    ArduinoOTA.onProgress([](unsigned int progress, unsigned int total) {
+      Serial.printf("[OTA] Progresso: %u%%\r", (progress / (total / 100)));
+    });
+    ArduinoOTA.onError([](ota_error_t error) {
+      Serial.printf("[OTA] Erro[%u]: ", error);
+      if (error == OTA_AUTH_ERROR) Serial.println("Falha de autenticação");
+      else if (error == OTA_BEGIN_ERROR) Serial.println("Falha ao iniciar");
+      else if (error == OTA_CONNECT_ERROR) Serial.println("Falha de conexão");
+      else if (error == OTA_RECEIVE_ERROR) Serial.println("Falha ao receber dados");
+      else if (error == OTA_END_ERROR) Serial.println("Falha ao finalizar");
+    });
+
+    ArduinoOTA.begin();
+    Serial.println("[INFO] OTA inicializado e pronto para atualizações.");
+    Serial.println("[INFO] Hostname: ESP32_Estacao_Meteo");
+    Serial.println("[INFO] Senha OTA: admin");
+    
   } else {
-    Serial.println("[INFO] Operando em modo offline. Dados serão armazenados no SD.");
+    Serial.println("[INFO] Operando em modo offline. OTA não disponível.");
   }
 
   lcd.clear();
@@ -432,6 +467,8 @@ void setup() {
 
 // LOOP PRINCIPAL
 void loop() {
+  ArduinoOTA.handle(); // Mantém o OTA ativo para receber atualizações
+  
   // Leitura dos botões (com debounce simples)
   bool estadoLCD = digitalRead(BOTAO_LCD);
   if (estadoLCD == LOW && ultimoEstadoLCD == HIGH) {
@@ -509,3 +546,4 @@ void loop() {
 
   delay(20); // Pequeno atraso para evitar loop muito rápido
 }
+
